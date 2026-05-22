@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giỏ Hàng - Sneaker Store</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo"><a href="index.html">SNEAKER<span>ZONE</span></a></div>
+        <nav class="nav-links">
+            <a href="index.html">Trang Chủ</a>
+            <a href="products.html">Sản Phẩm</a>
+            <a href="collections.html">Bộ Sưu Tập</a>
+            <a href="contact.html">Liên Hệ</a>
+            <a href="LabTH.html">LabTH</a>
+        </nav>
+        <div class="nav-icons">
+            <div class="cart-icon">
+                <i class="fa-solid fa-bag-shopping"></i>
+                <span class="badge">0</span>
+            </div>
+        </div>
+    </header>
+
+    <div class="page-header">
+        <h2>GIỎ HÀNG CỦA BẠN</h2>
+        <p><a href="index.html">Trang chủ</a> / Giỏ hàng</p>
+    </div>
+
+    <div class="cart-container">
+        <div class="cart-table-area">
+            <table class="cart-table">
+                <thead>
+                    <tr>
+                        <th>Sản phẩm</th>
+                        <th>Giá tiền</th>
+                        <th>Số lượng</th>
+                        <th>Tổng số</th>
+                        <th>Xóa</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Dữ liệu sẽ tự động đổ từ file JavaScript ra đây -->
+                </tbody>
+            </table>
+        </div>
+
+        <aside class="cart-summary">
+            <h3>Tóm tắt đơn hàng</h3>
+            <br>
+            <div class="summary-row">
+                <span>Tạm tính:</span>
+                <strong>0đ</strong>
+            </div>
+            <div class="summary-row">
+                <span>Phí vận chuyển:</span>
+                <span style="color: green; font-weight: 600;">Miễn phí</span>
+            </div>
+            <div class="summary-row total">
+                <span>Tổng tiền:</span>
+                <span>0đ</span>
+            </div>
+            <button class="btn-checkout">TIẾN HÀNH THANH TOÁN</button>
+        </aside>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

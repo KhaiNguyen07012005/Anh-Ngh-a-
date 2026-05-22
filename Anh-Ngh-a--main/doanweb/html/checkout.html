@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Thanh toán</title>
+
+    <link rel="stylesheet"
+    href="../css/checkout.css">
+
+</head>
+
+<body>
+    <button class="back-home" onclick="goHome()">
+        ← Quay về trang chủ
+    </button>   
+
+    <div class="checkout-container">
+
+        <h1>Thanh toán đơn hàng</h1>
+
+        <table>
+
+            <thead>
+
+                <tr>
+
+                    <th>Ảnh</th>
+                    <th>Sản phẩm</th>
+                    <th>Giá</th>
+                    <th>SL</th>
+                    <th>Thành tiền</th>
+                    <th>Xóa</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody id="cartTable">
+
+            </tbody>
+
+        </table>
+
+    </div>
+    <h2>Thông tin giao hàng</h2>
+
+    <div class="form-group">
+        <label>Tên người nhận:</label>
+
+        <input 
+            type="text"
+            id="fullName"
+            placeholder="Nhập họ tên"
+        >
+
+        <small class="error" id="nameError"></small>
+    </div>
+
+    <div class="form-group">
+        <label>Số điện thoại:</label>
+
+        <input 
+            type="text"
+            id="phone"
+            placeholder="Nhập số điện thoại"
+        >
+
+        <small class="error" id="phoneError"></small>
+    </div>
+
+    <div class="form-group">
+        <label>Địa chỉ:</label>
+
+        <textarea
+            id="address"
+            placeholder="Nhập địa chỉ"
+        ></textarea>
+
+        <small class="error" id="addressError"></small>
+    </div>
+
+    <button onclick="checkout()">
+        Thanh toán
+    </button>
+    <h2>
+        Tổng tiền:
+        <span id="totalPrice">
+            0 VND
+        </span>
+    </h2>
+
+    <script src="../javascript/checkout.js"></script>
+
+</body>
+</html>

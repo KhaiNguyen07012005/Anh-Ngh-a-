@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chi Tiết Sản Phẩm - Sneaker Store</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo"><a href="index.html">SNEAKER<span>ZONE</span></a></div>
+        <nav class="nav-links">
+            <a href="index.html">Trang Chủ</a>
+            <a href="products.html" class="active">Sản Phẩm</a>
+            <a href="collections.html">Bộ Sưu Tập</a>
+            <a href="contact.html">Liên Hệ</a>
+            <a href="LabTH.html">LabTH</a>
+        </nav>
+        <div class="nav-icons">
+            <a href="cart.html" class="cart-icon">
+                <i class="fa-solid fa-bag-shopping"></i>
+                <span class="badge">0</span>
+            </a>
+        </div>
+    </header>
+
+    <main class="product-detail-container">
+        <div class="detail-images">
+            <img class="main-img" src="https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?q=80&w=600&auto=format&fit=crop" id="MainImg" alt="Air Max">
+            <div class="thumb-images">
+                <img src="https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?q=80&w=500" class="active" alt="thumb">
+                <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=500" alt="thumb">
+                <img src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?q=80&w=500" alt="thumb">
+            </div>
+        </div>
+
+        <div class="detail-info">
+            <span class="brand">Nike Saucony</span>
+            <h1>Air Max Sport Neon Premium</h1>
+            <div class="rating">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                <span>(128 Đánh giá từ khách hàng)</span>
+            </div>
+            
+            <div class="price-box">
+                <span class="old-price" style="font-size: 20px;">2.500.000đ</span>
+                <span class="current-price" style="font-size: 28px;">1.990.000đ</span>
+            </div>
+
+            <p style="color:#57606f; line-height: 1.6; margin-bottom: 20px;">
+                Dòng sản phẩm phá cách mang công nghệ đệm khí tiên tiến giúp giảm chấn tối đa khi di chuyển. Thiết kế phối màu Neon cá tính, phù hợp cho cả đi chơi streetwear và tập luyện thể thao thể hình năng động.
+            </p>
+
+            <div class="size-selector">
+                <p><strong>Chọn Kích Cỡ (Size):</strong></p>
+                <div class="size-options">
+                    <button class="size-btn">39</button>
+                    <button class="size-btn active">40</button>
+                    <button class="size-btn">41</button>
+                    <button class="size-btn">42</button>
+                </div>
+            </div>
+
+            <div class="quantity-selector">
+                <p><strong>Số lượng:</strong></p>
+                <button class="qty-btn">-</button>
+                <input type="text" class="qty-input" value="1">
+                <button class="qty-btn">+</button>
+            </div>
+
+            <div class="action-btns">
+                <button class="btn-add-cart"><i class="fa-solid fa-cart-shopping"></i> Thêm Vào Giỏ</button>
+                <button class="btn-buy-now">Mua Ngay</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="main.js"></script>
+</body>
+</html>

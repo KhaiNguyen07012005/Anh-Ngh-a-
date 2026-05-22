@@ -1,0 +1,274 @@
+<!-- labTH.html -->
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab Thực Hành</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        :root {
+            --primary-color: #ff4757;
+            --dark-color: #2f3542;
+            --light-bg: #f1f2f6;
+            --white: #ffffff;
+            --gray-text: #747d8c;
+            --transition: all 0.3s ease;
+        }
+
+        body {
+            background: #f5f5f5;
+            color: var(--dark-color);
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* HEADER */
+        .hero-header {
+            background: #000;
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        .hero-header h1 {
+            font-size: 56px;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .hero-header p {
+            letter-spacing: 4px;
+            color: #aaa;
+            font-size: 14px;
+        }
+
+        /* LAB SECTION */
+        .lab-container {
+            width: 90%;
+            margin: 60px auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+        }
+
+        .lab-card {
+            background: var(--white);
+            border: 1px solid #eee;
+            padding: 35px;
+            transition: var(--transition);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.03);
+        }
+
+        .lab-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+        }
+
+        .lab-number {
+            color: #999;
+            font-size: 13px;
+            letter-spacing: 4px;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        .lab-title {
+            text-align: center;
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 25px;
+        }
+
+        .line {
+            width: 100%;
+            height: 1px;
+            background: #ddd;
+            margin-bottom: 25px;
+        }
+
+        .lab-links {
+            list-style: none;
+            margin-bottom: 30px;
+        }
+
+        .lab-links li {
+            margin-bottom: 15px;
+        }
+
+        .lab-links a {
+            color: var(--gray-text);
+            transition: var(--transition);
+            font-size: 15px;
+        }
+
+        .lab-links a:hover {
+            color: var(--primary-color);
+            padding-left: 8px;
+        }
+
+        .btn-detail {
+            display: block;
+            width: 100%;
+            text-align: center;
+            background: #000;
+            color: white;
+            padding: 14px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            transition: var(--transition);
+        }
+
+        .btn-detail:hover {
+            background: var(--primary-color);
+        }
+
+        /* RESPONSIVE */
+        @media(max-width:768px){
+            .hero-header h1{
+                font-size: 38px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="hero-header">
+        <h1>Lab Thực Hành</h1>
+        <p>HTML - CSS - Javascript</p>
+    </header>
+
+    <section class="lab-container">
+
+        <div class="lab-card">
+            <div class="lab-number">LAB 01</div>
+            <div class="lab-title">HTML</div>
+
+            <div class="line"></div>
+
+            <ul class="lab-links">
+                <li><a href="doanweb/Lab01/index.html">→ Lab1_3</a></li>
+                <li><a href="doanweb/Lab01/lab1_bai4.html">→ Lab1_4</a></li>
+                
+            </ul>
+
+            <a href="#" class="btn-detail">XEM CHI TIẾT</a>
+        </div>
+
+        <div class="lab-card">
+            <div class="lab-number">LAB 02</div>
+            <div class="lab-title">Table & List</div>
+
+            <div class="line"></div>
+
+            <ul class="lab-links">
+                <li><a href="doanweb/Lab02/lab02_khung_table.html">→ Lab2_1</a></li>
+                <li><a href="doanweb/Lab02/lab02_khung_table.html">→ Lab2_2</a></li>
+                <li><a href="doanweb/Lab02/Vi_du_Lab01/index.html">→ Lab2_3</a></li>
+            </ul>
+
+            <a href="#" class="btn-detail">XEM CHI TIẾT</a>
+        </div>
+
+        <div class="lab-card">
+            <div class="lab-number">LAB 03</div>
+            <div class="lab-title">Frame & Form</div>
+
+            <div class="line"></div>
+
+            <ul class="lab-links">
+                <li><a href="doanweb/Lab03/Vi_du_Lab01/index.html">→ Lab3_1</a></li>
+                <li><a href="doanweb/Lab03/Vi_du/index.html">→ Lab3_2</a></li>
+                <li><a href="doanweb/Lab03/Vi_du_Lab01/lab03_bai3.html">→ Lab3_3</a></li>
+            </ul>
+
+            <a href="#" class="btn-detail">XEM CHI TIẾT</a>
+        </div>
+
+        <div class="lab-card">
+            <div class="lab-number">LAB 04</div>
+            <div class="lab-title">CSS Cơ Bản</div>
+
+            <div class="line"></div>
+
+            <ul class="lab-links">
+                <li><a href="doanweb/Lab04/Vi_du/lab04_bai1.html">→ Lab4_1</a></li>
+                <li><a href="doanweb/Lab04/Vi_du/lab04_bai2.html">→ Lab4_2</a></li>
+                <li><a href="doanweb/Lab04/Vi_du/lab04_bai3.html">→ Lab4_3</a></li>
+            </ul>
+
+            <a href="#" class="btn-detail">XEM CHI TIẾT</a>
+        </div>
+
+        <div class="lab-card">
+            <div class="lab-number">LAB 05</div>
+            <div class="lab-title">Thuộc tính CSS</div>
+
+            <div class="line"></div>
+
+            <ul class="lab-links">
+                <li><a href="doanweb/Lab05/lab05_bai1.html">→ Lab5_1</a></li>
+                <li><a href="doanweb/Lab05/Vi_du/index.html">→ Lab5_2</a></li>
+                <li><a href="doanweb/Lab05/Bai_2/index.html">→ Lab5_3</a></li>
+            </ul>
+
+            <a href="#" class="btn-detail">XEM CHI TIẾT</a>
+        </div>
+
+        <div class="lab-card">
+            <div class="lab-number">LAB 06</div>
+            <div class="lab-title">Responsive CSS</div>
+
+            <div class="line"></div>
+
+            <ul class="lab-links">
+                <li><a href="doanweb/Lab06/lab06_bai1.html">→ Lab6_1</a></li>
+                <li><a href="doanweb/Lab06/Bai_2_Minh_hoa_layout/index.html">→ Lab6_2</a></li>
+                <li><a href="doanweb/Lab06/lab06_bai3.html">→ Lab6_3</a></li>
+            </ul>
+
+            <a href="#" class="btn-detail">XEM CHI TIẾT</a>
+        </div>
+            <div class="lab-card">
+            <div class="lab-number">LAB 07</div>
+            <div class="lab-title">Javascript</div>
+
+            <div class="line"></div>
+
+            <ul class="lab-links">
+                <li><a href="doanweb/Lab07/demo_bai_2/index.html">→ Lab7_1</a></li>
+                <li><a href="doanweb/Lab07/Vi_du/index.html">→ Lab7_2</a></li>
+            </ul>
+
+            <a href="#" class="btn-detail">XEM CHI TIẾT</a>
+        </div>
+            <div class="lab-card">
+            <div class="lab-number">LAB 08</div>
+            <div class="lab-title">Javascript nâng cao</div>
+
+            <div class="line"></div>
+
+            <ul class="lab-links">
+                <li><a href="doanweb/Lab08/lab08_slider.html">→ Lab8_1</a></li>
+                <li><a href="doanweb/Lab08/lab08_slider_auto.html">→ Lab8_2</a></li>
+                <li><a href="doanweb/Lab08/lab08_json.html">→ Lab8_3</a></li>
+            </ul>
+
+            <a href="#" class="btn-detail">XEM CHI TIẾT</a>
+        </div>
+
+    </section>
+
+</body>
+</html>
